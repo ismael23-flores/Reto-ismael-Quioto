@@ -1,0 +1,298 @@
+:root{
+    --colorPrimario:#E23636;
+    --colorSecundario:#518CCA;
+    --colorFondo:#f4f4f4;
+    --colorTarjeta:#FFFFFF;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background-color: var(--colorFondo);
+}
+
+header
+{
+    background-color: var(--colorPrimario);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    nav{
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: white;
+            margin: 25px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    }
+}
+
+footer{
+    background-color: var(--colorSecundario);
+    padding: 15px;
+    margin-top: 10px;
+    
+
+    h2{
+        text-align: center;
+        color: white;
+        font-family: Avengeance;
+        margin-top: 5px;
+        
+
+    }
+   
+}
+
+main {
+    margin-top: 162px;
+    h1{
+        margin: 62px 0 0 0;
+        text-align: center;
+        color: #E23636;
+        font-family: Avengeance;
+        font-size: 64px;
+    }
+
+
+    .tarjetaIntroduccion{
+        width: 1000px;
+        height: 304px;
+        background-color: var(--colorTarjeta);
+        margin: 62px auto 25px auto;
+        padding: 30px;
+        display: flex;
+        gap: 23px;
+        box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+
+        hr{
+            background-color: var(--colorPrimario);
+            height: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 12px;
+        }
+
+        .tarjetaIntroduccion-contenido{
+            h2{
+                color: var(--colorPrimario);
+                font-size: 32px;
+                font-weight: lighter;
+                /* border-bottom: 4px solid var(--colorPrimario); */
+                margin-bottom: 12px;
+                line-height: 1.5;
+            }
+
+            hr{
+                background-color: var(--colorPrimario);
+                height: 5px;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 12px;
+            }
+
+            p{
+                font-size: 18px;
+                font-weight: lighter;
+                line-height: 1.8;
+                /* font-family: 'Comic'; */
+            }
+        }
+
+        .tarjetaIntroduccion-imagenes{
+            img{
+                width: 240px;
+                border-radius: 5px;
+                margin-top: 50px;
+            }
+        }
+    }
+    
+    .tarjetaHistoria{
+        width: 1000px;
+        /* height: 304px; */
+        background-color: var(--colorTarjeta);
+        margin: 25px auto 25px auto;
+        padding: 30px;
+        display: flex;
+        gap: 23px;
+        box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+
+        h2{
+            color: var(--colorPrimario);
+            font-size: 32px;
+            font-weight: lighter;
+            /* border-bottom: 4px solid var(--colorPrimario); */
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        hr{
+            background-color: var(--colorPrimario);
+            height: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 12px;
+        }
+
+        .tarjetaHistoria-contenido{
+            
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            h3{
+                font-size: 32px;
+                color: var(--colorSecundario);
+                font-weight: lighter;
+            }
+
+            p{
+                font-size: 18px;
+                font-weight: lighter;
+                line-height: 1.8;
+                /* font-family: 'Comic'; */
+            }
+
+            .cajas{
+                columns: 2;
+               
+                margin-top: 12px;
+                .cajita{
+                    
+                    background-color: var(--colorTarjeta);
+                    box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+                    margin-bottom: 20px;
+                    padding: 20px;                    
+                }
+            }
+        }
+
+        .tarjetaHistoria-imagenes{
+            width: 240px;
+            margin-top: 80px;
+            img{
+                width: 100%;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+        }
+    }
+    
+    .pregunta1{
+        width: 1000px;
+        height: 304px;
+        background-color: var(--colorTarjeta);
+        margin: 25px auto 25px auto;
+        padding: 30px;
+        display: flex;
+        gap: 23px;
+        box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+
+        hr{
+            background-color: var(--colorPrimario);
+            height: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 12px;
+        }
+
+        .pregunta{
+            h2{
+                color: var(--colorPrimario);
+                font-size: 32px;
+                font-weight: lighter;
+                margin-bottom: 12px;
+                line-height: 1.5;
+            }
+    
+            p{
+                font-size: 18px;
+                font-weight: lighter;
+                line-height: 1.8;
+               
+            }
+
+        }
+
+        .pregunta_imagen{
+            img{
+                width: 240px;
+                border-radius: 5px;
+                margin-top: 50px;
+            }
+        }
+        
+
+
+
+    }
+
+    .cambio{
+        width: 1000px;
+        height: 304px;
+        background-color: var(--colorTarjeta);
+        margin: 25px auto 25px auto;
+        padding: 30px;
+        display: flex;
+        gap: 23px;
+        box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+
+        hr{
+            background-color: var(--colorPrimario);
+            height: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 12px;
+        }
+
+        .cambia1{
+
+            h2{
+                color: var(--colorPrimario);
+                font-size: 32px;
+                font-weight: lighter;
+                margin-bottom: 12px;
+                line-height: 1.5;
+            }
+    
+            p{
+                font-size: 18px;
+                font-weight: lighter;
+                line-height: 1.8;
+               
+            }
+
+        }
+
+        .imagen_cambio{
+
+            img{
+                width: 240px;
+                border-radius: 5px;
+                margin-top: 50px;
+            }
+
+        }
+
+
+    }
+    
+
+    
+    
+}
+
